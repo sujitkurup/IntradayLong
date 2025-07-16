@@ -85,7 +85,7 @@
             let quantity = Math.floor(riskAmount / riskPerShare);
             let target1 = stockPrice + riskPerShare; // 1:1 Risk-Reward
             let target2 = stockPrice + (riskPerShare * 1.5); // 1:1.5 Risk-Reward
-            let target3 = stockPrice * (riskPerShare * 1.02); // 2% fixed profit target
+            let target3 = stockPrice * (riskPerShare * 2); // 2% fixed profit target
 
             document.getElementById("result").innerHTML =
                 `<p>Stop Loss: <strong>${stopLossValue.toFixed(2)}</strong></p>
